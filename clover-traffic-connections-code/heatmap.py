@@ -5,8 +5,8 @@ import pandas as pd
 df = pd.read_csv('../datasets/crashdata.csv')
 # Preparing data
 data = [go.Heatmap(x=df['Reported_Location'],
-y=df['Hour'],
-z=df['CollisionType'].values.tolist(),
+y=df['CollisionType'],
+z=df['Hour'].values.tolist(),
 colorscale='Jet')]
 # Preparing layout
 layout = go.Layout(title='Type of Crashes in Bloomington by Location and Hour', xaxis_title="Location", yaxis_title="Hour of Day")
