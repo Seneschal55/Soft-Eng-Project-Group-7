@@ -39,4 +39,4 @@ yaxis_title="Number of Pedestrians and Cyclists", barmode='stack')
 
 # Plot the figure and saving in a html file
 fig = go.Figure(data=data, layout=layout)
-pyo.plot(fig, filename='bloomington_stack.html')
+pyo.plot(fig, filename='bloomington_pedestrians.html')
