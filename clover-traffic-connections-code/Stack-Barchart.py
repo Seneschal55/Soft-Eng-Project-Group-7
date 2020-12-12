@@ -3,7 +3,7 @@ import plotly.offline as pyo
 import plotly.graph_objs as go
 
 #Grab csv dataset
-df = pd.read_csv('../Datasets/pedestrian-and-bicyclist-counts.csv')
+df = pd.read_csv('../datasets/pedestrian-and-bicyclist-counts.csv')
 
 df = df.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
 
