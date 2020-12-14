@@ -6,10 +6,10 @@ import plotly.graph_objs as go
 # Load CSV file from Datasets folder
 df = pd.read_csv('../datasets/monroe-county-crash-data2003-to-2015.csv', encoding="ISO-8859–1")
 
-# Filtering US Cases
+# Filtering for crashes with injury
 filtered_df = df[df['Injury Type'] != 'No injury/unknown']
 
-# Creating sum of number of cases group by State Column
+# Creating sum of number of crashes group
 new_df = filtered_df.groupby(['Month'])['Injury Type'].count().reset_index()
 
 # Preparing data
