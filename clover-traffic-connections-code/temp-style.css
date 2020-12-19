@@ -1,0 +1,48 @@
+button{
+    background-color: darkcyan;
+    color: white;
+    border: 2px solid darkcyan;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+    display: inline-block;
+    margin: 1em .5em;
+    width: 30%;
+}
+
+button:hover{
+    background-color: white;
+    color: darkcyan;
+    border-color: darkcyan;
+}
+
+.buttons-row{
+    text-align: center;
+}
+
+.buttons-row > button{
+    font-size: 1.25em;
+    padding: 1em 3em;
+}
+
+.home-div{
+    height: 100px;
+    width: 100%;
+}
+
+.home-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    margin: 10px;
+}
+
+.home-button:hover {
+  box-shadow: 0 0 2px 1px dodgerblue;
+}
+
+.sec-big-points > p{
+    font-size: 2em;
+}
