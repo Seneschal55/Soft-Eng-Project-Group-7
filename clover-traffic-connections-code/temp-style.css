@@ -32,14 +32,14 @@ main{
 /*home page*/
 #map-div{
     float: left;
-    width: 750px;
+    width: 650px;
     display: block-inline;
     margin: 1vw;
 }
 
 #home-div{
     float: left;
-    width: 50%;
+    width: 60%;
     display: block-inline;
 }
 
@@ -56,6 +56,10 @@ main{
 
 #welcome-div > p, #safety-div > ul{
     font-size: 1.1em;
+}
+
+#safety-points > li{
+    padding-bottom: .5em;
 }
 
 /*header and navigation*/
@@ -88,24 +92,10 @@ nav > a{
     font-weight: bold;
     color: white;
     font-size: 1.4vw;
-    margin: .18vw .8vw;
-    width: 19vw;
+    margin: .18vw 2vw;
+    width: 15vw;
 }
 
 nav > a:hover {
   box-shadow: 0 0 4px 1px white;
-}
-
-/*footer*/
-footer{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 2em;
-    background-color: darkcyan;
-}
-
-footer > p{
-    margin: .5em;
-    text-align: center;
 }
