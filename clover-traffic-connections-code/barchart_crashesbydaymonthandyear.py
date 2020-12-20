@@ -12,6 +12,7 @@ filtered_df = df[df['Injury Type'] != 'No injury/unknown']
 
 # Creating sum of number of crashes group
 new_df = filtered_df.groupby(['Month'])['Injury Type'].count().reset_index()
+new_df = new_df.sort_values(by=['Injury Type'], ascending=[True]).head(12).reset_index()
 
 df2 = pd.read_csv('../Datasets/monroe-county-crash-data2003-to-2015.csv', encoding="ISO-8859–1")
 
