@@ -21,6 +21,14 @@
     width: 80px;
 }
 
+#popular-graph-header{
+    height: 14vw;
+}
+
+#popular-graph{
+    width: 50vw;
+}
+
 /*body and main standards*/
 body{
     background-color: white;
