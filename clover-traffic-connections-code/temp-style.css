@@ -1,28 +1,22 @@
 /*graph info*/
 .graph-header{
-    height: 220px;
+    height: 16vw;
 }
+
 .graph-info-box{
-    height: 75px;
     position: absolute;
-    top: 125;
-    right: 0px;
-    width: 700px;
-    margin: 10px;
+    top: 8vw;
+    right: 1vw;
+    height: 7vw;
+    width: 40vw;
     border: 3px solid darkcyan;
 }
 .home-button{
     position: absolute;
-    top: 125;
-    left: 0;
+    top: 8vw;
+    left: 1vw;
     width: 80px;
-    margin: 10px;
 }
-
-.home-button:hover{
-  box-shadow: 0 0 2px 1px dodgerblue;
-}
-
 
 /*body and main standards*/
 body{
@@ -40,19 +34,23 @@ main{
     font-size: 1.2em;
     border: 4px solid darkcyan;
     text-align: center;
-    padding: 5px;
+    padding: .8vw;
 }
 
 #map-div{
     float: left;
-    width: 40%;
-    padding: 5px 35px;
+    width: 45vw;
+    min-width: 750px;
+    padding: 2vh 2vw;
 }
 
 #home-div{
+    position: absolute;
     float: right;
-    width: 54%;
-    margin-right: 35px;
+    top: 8vw;
+    right: 1vw;
+    height: 75vh;
+    width: 52vw;
 }
 
 #welcome-div > p, #safety-div > ul{
@@ -60,12 +58,12 @@ main{
 }
 
 .home-info{
-    margin-bottom: 100px;
+    margin-bottom: .8vw;
 }
 
 /*header and navigation*/
 header{
-    height: 125px;
+    height: 8vw;
 }
 
 #home-title-link, header > h1{
@@ -73,17 +71,17 @@ header{
     text-decoration: none;
     font-weight: bold;
     color: darkcyan;
-    font-size: 1.4em;
+    font-size: 1.8vw;
 }
 
-#home-title-link:hover{
+#home-title-link:hover, .home-button:hover{
   box-shadow: 0 0 2px 1px dodgerblue;
 }
 
 nav{
     text-align: center;
     background-color: darkcyan;
-    height: 70px;
+    height: 3.9vw;
 }
 
 nav > a{
@@ -92,9 +90,9 @@ nav > a{
     text-decoration: none;
     font-weight: bold;
     color: white;
-    font-size: 1.55em;
-    margin: 5px 50px;
-    width: 350px;
+    font-size: 1.4vw;
+    margin: .18vw .8vw;
+    width: 19vw;
 }
 
 nav > a:hover {

@@ -9,6 +9,6 @@ footer_html += '<p>This site was made as a school project for the city of Bloomi
 
 window.onload = function(){
     document.getElementById("nav-bar").innerHTML = nav_html;
-    document.getElementById("footer-bar").innerHTML = footer_html;    
+    document.getElementById("footer-bar").innerHTML = footer_html;
 }
 
