@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 
 # Load CSV file from Datasets folder
-df = pd.read_csv('../Datasets/monroe-county-crash-data2003-to-2015.csv', encoding="ISO-8859–1")
+df = pd.read_csv('../datasets/monroe-county-crash-data2003-to-2015.csv', encoding="ISO-8859–1")
 
 # Filtering for crashes with injury
 filtered_df = df[df['Injury Type'] != 'No injury/unknown']
@@ -14,7 +14,7 @@ filtered_df = df[df['Injury Type'] != 'No injury/unknown']
 new_df = filtered_df.groupby(['Month'])['Injury Type'].count().reset_index()
 new_df = new_df.sort_values(by=['Injury Type'], ascending=[True]).head(12).reset_index()
 
-df2 = pd.read_csv('../Datasets/monroe-county-crash-data2003-to-2015.csv', encoding="ISO-8859–1")
+df2 = pd.read_csv('../datasets/monroe-county-crash-data2003-to-2015.csv', encoding="ISO-8859–1")
 
 # Filtering for crashes with injury
 filtered_df2 = df2[df2['Injury Type'] != 'No injury/unknown']
@@ -23,7 +23,7 @@ filtered_df2 = df2[df2['Injury Type'] != 'No injury/unknown']
 new_df2 = filtered_df2.groupby(['Year'])['Injury Type'].count().reset_index()
 
 # Load CSV file from Datasets folder
-df3 = pd.read_csv('../Datasets/monroe-county-crash-data2003-to-2015.csv', encoding="ISO-8859–1")
+df3 = pd.read_csv('../datasets/monroe-county-crash-data2003-to-2015.csv', encoding="ISO-8859–1")
 
 # Filtering for crashes with injury
 filtered_df3 = df3[df3['Injury Type'] != 'No injury/unknown']
